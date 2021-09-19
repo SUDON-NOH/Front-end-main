@@ -1,0 +1,363 @@
+:root {
+  /* color */
+  --text-color: #f5f5f5;
+  --video-bg-color: black;
+  --background-color: #1b1b1b;
+  --hashtag-color: #2979ff;
+  --views-color: #bdbdbd;
+  --logo-color: red;
+  --header-color: #424242;
+  --button-color: transparent;
+
+  /* Size */
+  --side-padding: 12px;
+  --right-padding: 30px;
+
+  /* Font Size */
+  --font-Xlarge: 25px;
+  --font-llarge: 20px;
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-samll: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Do Hyeon';
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+button, 
+button:focus {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--header-color);
+  font-size: var(--font-large);
+  width: 100%;
+  align-items: center;
+}
+
+.header .youtube_logo {
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.header a i {
+  padding: 10px;
+}
+
+.header .fa-youtube {
+  color: var(--logo-color);
+  font-size: var(--font-Xlarge);
+  padding-right: 2px;
+}
+
+.header span sup {
+  font-size: var(--font-micro);
+}
+
+.header .extraBtn {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.header div ul {
+  display: flex;
+  align-items: center;
+}
+
+.header div ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.header div ul li input {
+  display: none;
+}
+
+.header img {
+  padding-top: 6px;
+  border-radius: 70%;
+  max-width: 35px;
+  max-height: 35px;
+}
+
+
+
+/* section */
+
+section {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+  /* video */
+  .video {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: var(--video-bg-color);
+  }
+  
+  .video video {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+  }
+
+
+/* info */
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+  /* info title */
+  .info .title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info .title ul {
+    display: flex;
+    flex-direction: row;
+    color: var(--hashtag-color);
+    padding-top: 20px;
+  }
+
+  .info .title ul li {
+    padding-right: 7px;
+    font-size: var(--font-medium);
+  }
+
+  .info .title .content_title {
+    font-size: var(--font-Xlarge);
+  }
+
+  /* info content */
+  .info .content span {
+    color: var(--views-color);
+  }
+
+  .info .content {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-large);
+    color: var(--views-color);
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+
+  .info .content ul {
+    display: flex;
+    padding-right: var(--right-padding);
+  }
+
+  .info .content ul li {
+    display: flex;
+    padding: 0px 10px;
+  }
+
+  .info .content .content_btn {
+    text-decoration: none;
+    color: var(--views-color);
+  }
+
+  .info .content .content_btn i.active {
+    color: lightblue;
+  }
+
+  .info .content .content_btn:hover {
+    background-color: var(--header-color);
+    border-radius: 10%;
+    padding: 5px;
+  }
+
+
+  /* info info_detail */
+  .info .info_detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: var(--right-padding);
+    align-items: center;
+    border-top: 1px solid var(--views-color);
+  }
+
+  .info .channel_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .info .channel_info_detail {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .info .channel_name {
+    font-size: var(--font-large);
+
+  }
+
+  .info .subscribe_cnt {
+    font-size: var(--font-small);
+    color: var(--views-color);
+  }
+
+  .info .subscribe_btn {
+    border-radius: 10%;
+    border: 0px;
+    background-color: var(--logo-color);
+    color: black;
+    padding: 10px 24px;
+    font-family: 'Do Hyeon';
+    font-size: var(--font-large);
+  }
+
+  .info .subscribe_btn:hover {
+    background-color: black;
+    color: var(--text-color);
+  }
+
+  .info_detail img {
+    padding-top: 6px;
+    border-radius: 70%;
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .channel_detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 310px;
+    margin-bottom: 15px;
+  }
+
+  .channel_detail_btn {
+    border: 0px;
+    color: var(--views-color);
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Do Hyeon";
+    background-color: transparent;
+    width: 40px;
+  }
+
+  .channel_detail_btn:hover {
+    color: var(--text-color);
+    background-color: var(--views-color);
+  }
+
+
+/* content */
+
+video {
+  width: 170px;
+  height: 100px;
+  background-color: black;
+}
+
+.contents {
+  border-top: 1px solid var(--views-color);
+  margin-left: 20px;
+}
+
+  .next_content {
+    padding-top: 10px;
+    display: flex;
+    padding-bottom: 5px;
+  }
+
+  .next_txt {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .next_title {
+    font-size: var(--font-llarge);
+  }
+
+  .next_channel {
+    padding-top: 10px;
+    color: var(--views-color);
+  }
+
+  .next_views {
+    color: var(--views-color);
+  }
+
+
+
+@media screen and (min-width: 768px) {
+  
+  .header .youtube_logo {
+    flex: 1 1 20%;
+  }
+
+  .header .extraBtn {
+    flex: 1 1 70%;
+    justify-contetn: center;
+  }
+
+  .header .extraBtn .search {
+    flex: 1 1 70%;
+    justify-content: flex-end;
+  }
+
+  .header .extraBtn ul li input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+    border-radius: 6%;
+    background-color: var(--views-color);
+    font-size: var(--font-llarge);
+    font-family: "Do Hyeon";
+  }
+
+  .header .extraBtn .extra {
+    flex: 1 1 30%;
+    justify-content: flex-end;
+  }
+
+  .infoandnext {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contents {
+    border-top: none;
+    border-left: 1px solid var(--views-color);
+    margin-top: 20px;
+  }
+}
